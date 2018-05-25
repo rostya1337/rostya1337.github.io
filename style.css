@@ -66,16 +66,16 @@ hr {
 /*Эффект скругления углов при наведении*/
 
 .hover-effect5 {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 .hover-effect5:hover  {
 	border-radius:50px 50px 50px 50px;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 /**Появление тени**/
