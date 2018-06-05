@@ -41,7 +41,7 @@ body {
 /*.container2{background-color:rgb(255,255,255); height:222px; position:absolute; width:360px; top:45%; left:50%;}
 .center{width: 340px; top: 50%; left: 50%; position: absolute; margin-top: -100px; margin-left: -670px;}*/
 .name{font-size: 700%; color: white; font-family: Segoe UI; font-weight: lighter; text-align: center;}
-.center{position: absolute; top: 65%; left: 25%; transform: translate(-50%, -50%); width: 340px; height: auto;}
+.center{position: absolute; top: 65%; left: 25%; transform: translate(-50%, -50%); width: 21.5%; height: auto;}
 .icons{display: inline-block; position: relative; width: 90px; height: 90px; margin: 7px; cursor: pointer; border-radius: 7px 7px 7px 7px; border: 3px solid #fff;}
 .me-container {position: absolute; margin: -300px 25px;}
 .me{display: inline-block; position: relative; width: 270px; height: 270px; border: 5px solid #fff; border-radius: 150px;}
