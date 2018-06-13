@@ -32,9 +32,7 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
- @media screen and (max-width: 1000px) { 
- div.contentblock {width: 900px;}
- }
+ @media screen and (max-width: 768px) {}
 body {
   background-color: #000;
 }
