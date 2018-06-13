@@ -32,6 +32,9 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+@-viewport {
+  width: device-width;
+}
 body {
   background-color: #000;
 }
