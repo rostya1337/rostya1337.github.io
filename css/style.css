@@ -1,0 +1,66 @@
+body {
+    background-color: #fff;
+}
+
+section {
+    height:100vh;
+    padding-top: 50px;
+    overflow:auto; 
+}
+
+h1{
+    font-weight: lighter;
+    font-size: 70px;
+    color: #fff;
+}
+
+.bg {
+	background: url('../images/bg.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+
+.me{
+    border-radius: 150px;
+}
+
+.icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition-property: border-radius;
+    transition-duration: 0.15s;
+    border-radius: 12px 12px 12px 12px;
+}
+
+img.icon:hover {
+    border-radius: 50%;
+}
+
+hr{
+    
+    border-color: #fff;
+}
+
+.jumbotron{
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.col,
+    [class*="col-md-5"] {
+    padding-top: 20px;
+  }
+
+.col,
+    [class*="col-12"] {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
