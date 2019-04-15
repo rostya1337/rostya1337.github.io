@@ -20,12 +20,38 @@
     }
 }(jQuery));
 
+(function($) {
+    $.fn.logo = function(options) {
+        var windowHeight = $(window).height();
+        var settings = $.extend({
+            speed: 0.15
+        }, options);
+        return this.each( function() {
+        	var $this = $(this);
+        	$(document).scroll(function(){
+    		        var scrollTop = $(window).scrollTop();
+            	        var offset = $this.offset().top;
+            	        var height = $this.outerHeight();
+			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+				return;
+			}
+			var ylogoPosition = Math.round((offset - scrollTop) * settings.speed);
+    			$this.css('top', ylogoPosition + 'px');
+        	});
+        });
+    }
+}(jQuery));
+
 $('.bg-1,.bg-3').parallax({
 	speed :	0.15
 });
 
 $('.bg-2').parallax({
 	speed :	0.25
+});
+
+$('.logo').logo({
+	speed :	0.20
 });
 
 function donate_start() {
