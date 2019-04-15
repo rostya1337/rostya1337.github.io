@@ -55,15 +55,11 @@ hr{
     border-color: rgb(172, 172, 172);
 }
 
-.jumbotron{
+/*.jumbotron{
     padding-bottom: 10px;
     padding-top: 30px;
-}
+}*/
 
-.col,
-    [class*="col-md-5"] {
-    padding-top: 15px;
-}
 
 .center{
     margin-left: auto;
@@ -82,10 +78,10 @@ hr{
     color:#efefef;
   }
 
-.container.don {
+.logo {
+    position: relative;
     height: 100%;
+    width: 50%;
+    left: 22%;;
 }
 
-.row.don {
-    height: 100%;
-}
