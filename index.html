@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section class="bg text-center">
+    <section class="bg-1 text-center">
         <img src="./images/me.jpg" class="me img img-thumbnail">
         <h1>rostya</h1>
         <div class="container">
@@ -37,35 +37,38 @@
                 <div class="col-12 col-md-6"><hr></div>
             </div>
         </div>
+        <p style="color:#ffff; font-size: 15pt;" class="text-center">These are my profiles in different social networks</p>
+    </section>
         <div class="container">
-            <h2>game development</h2>
+                <hr>
+            <h2 class="text-center">game development</h2>
+            <hr>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <div class="jumbotron">
-                        <h3 class="display-5">Running Through Russia 2</h3>
-                        <hr class="my-2">
-                        <p>Second part of legendary Running Through Russia! New locations, characters, bonuses, etc. Let your running continue.</p>
-                        <hr class="my-2">
-                        <div class="panel-footer text-right"><a onclick="window.open('https://store.steampowered.com/app/870080/Running_Through_Russia_2/')" class="btn btn-dark btn-lg" role="button">Steam</a></div>
+                <div class="col-md-5 center">
+                    <div class="card">
+                        <div class="card-header text-center">
+                                <h3>Running Through Russia 2</h3>
+                        </div>
+                    <div class="card-body">
+                        <p class="card-text text-center">Second part of legendary Running Through Russia! New locations, characters, bonuses, etc. Let your running continue.</p>
+                    </div>
+                        <div class="card-footer">
+                        <div class="btn btn-dark "><a onclick="window.open('https://store.steampowered.com/app/870080/Running_Through_Russia_2/')">Steam</a></div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="jumbotron">
-                        <h3 class="display-5">Strange Return</h3>
-                        <hr class="my-2">
-                        <p>At the moment the game is in development. Genre: visual novel. I will be glad if you support our team as you please. :></p>
-                        <hr class="my-2">
-                        <div class="panel-footer text-right"><a onclick="window.open" class="btn btn-dark btn-lg" role="button">In developing</a></div>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="divider"></div>
+        <section class="bg-2 text-center">
+        </section>
+        <div id="footer">
         <div class="container">
-            <p class="text-center creator">Created by rostya himself</p>
+            <p class="text-center">Created by rostya himself</p>
         </div>
-    </section>
-    <script src="js/jquety.js"></script>
+        </div>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
 </body>
 </html>

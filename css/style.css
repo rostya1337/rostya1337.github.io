@@ -1,11 +1,8 @@
-body {
-    background-color: #fff;
-}
-
 section {
-    height:100vh;
-    padding-top: 20px;
-    overflow:auto; 
+    height:700px;
+    padding-top:30px;
+    padding-bottom:20px;
+    overflow:auto;
 }
 
 h1{
@@ -17,15 +14,21 @@ h1{
 h2{
     font-weight: lighter;
     font-size: 50px;
-    color: #fff;
 }
 
-h3{
-    padding-bottom: 20px;
+.divider {
+    height:50px;
 }
 
-.bg {
-	background: url('../images/bg.jpg') no-repeat center center fixed;
+.bg-1 {
+    background: url('./../images/bg1.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-2 {
+	background: url('./../images/bg2.jpg') no-repeat top center fixed;
+    color:#fff;
     background-size:cover;
 }
 
@@ -49,7 +52,7 @@ img.icon:hover {
 }
 
 hr{
-    border-color: #fff;
+    border-color: rgb(172, 172, 172);
 }
 
 .jumbotron{
@@ -62,14 +65,27 @@ hr{
     padding-top: 15px;
 }
 
-a{
-    color: #fff !important;
+.center{
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.container{
-    margin-top: -12px;
+#footer {
+    height: 58px;
+    background-color:#3f3e3e;
+    margin-top: 1px;
+    padding-top: 19px;
+    padding-bottom: 19px;
 }
 
-.creator{
-    color: #fff;
+#footer p {
+    color:#efefef;
+  }
+
+.container.don {
+    height: 100%;
+}
+
+.row.don {
+    height: 100%;
 }
