@@ -42,7 +42,29 @@
     }
 }(jQuery));
 
-$('.bg-1,.bg-3').parallax({
+(function($) {
+    $.fn.youtube = function(options) {
+        var windowHeight = $(window).height();
+        var settings = $.extend({
+            speed: 0.15
+        }, options);
+        return this.each( function() {
+        	var $this = $(this);
+        	$(document).scroll(function(){
+    		        var scrollTop = $(window).scrollTop();
+            	        var offset = $this.offset().top;
+            	        var height = $this.outerHeight();
+			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+				return;
+			}
+			var ytextPosition = Math.round((offset - scrollTop) * settings.speed);
+    			$this.css('top', ytextPosition + 'px');
+        	});
+        });
+    }
+}(jQuery));
+
+$('.bg-1').parallax({
 	speed :	0.15
 });
 
@@ -52,6 +74,10 @@ $('.bg-2').parallax({
 
 $('.logo').logo({
 	speed :	0.20
+});
+
+$('.youtube').youtube({
+	speed :	0.25
 });
 
 function donate_start() {
