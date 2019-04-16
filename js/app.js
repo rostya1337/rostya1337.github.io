@@ -35,7 +35,7 @@
 			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
 				return;
 			}
-			var ylogoPosition = Math.round((offset - scrollTop) * settings.speed);
+			var ylogoPosition = Math.round((offset - scrollTop) * settings.speed) + 40;
     			$this.css('top', ylogoPosition + 'px');
         	});
         });

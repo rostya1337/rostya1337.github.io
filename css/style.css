@@ -48,7 +48,7 @@ h2{
 img.icon:hover {
     border-radius: 50%;
     border-radius: 180px #fff;
-    transform: rotate(720deg) ;
+    transform: rotate(360deg) ;
     transition: border-radius 1000ms ease 0ms, transform 1000ms ease 0ms;
 }
 
@@ -84,7 +84,7 @@ hr{
     position: relative;
     height: 100%;
     width: 50%;
-    left: 22%;;
+    left: 25%;
 }
 
 .grow {
