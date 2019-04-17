@@ -114,6 +114,16 @@ hr{
 	height: 100%;
 }
 
+.video{
+    margin-top: 10%;
+}
+
+.text-holder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /*@media (min-width: 1200px) {
     .youtube {
         position: relative;
