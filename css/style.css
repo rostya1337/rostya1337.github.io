@@ -118,13 +118,7 @@ hr{
     margin-top: 10%;
 }
 
-.text-holder {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .youtube {
         position: relative;
         cursor: pointer;
@@ -168,7 +162,7 @@ hr{
         position: relative;
         margin-top: 0.5%;
     }
-}*/
+}
 
 .container-parallax {
     position: relative;
