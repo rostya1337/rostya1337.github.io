@@ -21,7 +21,7 @@
 }(jQuery));
 
 (function($) {
-    $.fn.logo = function(options) {
+    $.fn.pos_parallax = function(options) {
         var windowHeight = $(window).height();
         var settings = $.extend({
             speed: 0.15
@@ -35,74 +35,8 @@
 			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
 				return;
 			}
-			var ylogoPosition = Math.round((offset - scrollTop) * settings.speed) + 40;
+			var ylogoPosition = Math.round((offset - scrollTop) * settings.speed);
     			$this.css('top', ylogoPosition + 'px');
-        	});
-        });
-    }
-}(jQuery));
-
-(function($) {
-    $.fn.youtube = function(options) {
-        var windowHeight = $(window).height();
-        var settings = $.extend({
-            speed: 0.15
-        }, options);
-        return this.each( function() {
-        	var $this = $(this);
-        	$(document).scroll(function(){
-    		        var scrollTop = $(window).scrollTop();
-            	        var offset = $this.offset().top;
-            	        var height = $this.outerHeight();
-			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-				return;
-			}
-			var ytextPosition = Math.round((offset - scrollTop) * settings.speed);
-    			$this.css('top', ytextPosition + 'px');
-        	});
-        });
-    }
-}(jQuery));
-
-(function($) {
-    $.fn.video = function(options) {
-        var windowHeight = $(window).height();
-        var settings = $.extend({
-            speed: 0.15
-        }, options);
-        return this.each( function() {
-        	var $this = $(this);
-        	$(document).scroll(function(){
-    		        var scrollTop = $(window).scrollTop();
-            	        var offset = $this.offset().top;
-            	        var height = $this.outerHeight();
-			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-				return;
-			}
-			var yvideoPosition = Math.round((offset - scrollTop) * settings.speed);
-    			$this.css('top', yvideoPosition + 'px');
-        	});
-        });
-    }
-}(jQuery));
-
-(function($) {
-    $.fn.message = function(options) {
-        var windowHeight = $(window).height();
-        var settings = $.extend({
-            speed: 0.15
-        }, options);
-        return this.each( function() {
-        	var $this = $(this);
-        	$(document).scroll(function(){
-    		        var scrollTop = $(window).scrollTop();
-            	        var offset = $this.offset().top;
-            	        var height = $this.outerHeight();
-			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-				return;
-			}
-			var ytextPosition = Math.round((offset - scrollTop) * settings.speed);
-    			$this.css('top', ytextPosition + 'px');
         	});
         });
     }
@@ -116,20 +50,8 @@ $('.bg-2').parallax({
 	speed :	0.25
 });
 
-$('.logo').logo({
+$('.container-parallax').pos_parallax({
 	speed :	0.20
-});
-
-$('.youtube').youtube({
-	speed :	0.25
-});
-
-$('.message').message({
-	speed :	0.20
-});
-
-$('.video').video({
-	speed :	0.25
 });
 
 function donate_start() {
