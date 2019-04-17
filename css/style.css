@@ -116,7 +116,6 @@ hr{
 
 .video{
     margin-top: 10%;
-    margin-left: 10%;
 }
 
 @media (min-width: 1200px) {
@@ -135,6 +134,11 @@ hr{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .video{
+        margin-top: 10%;
+        margin-left: 10%;
     }
 }
 
